@@ -1,0 +1,901 @@
+@font-face {
+  font-family: "IvarDisplayRegular";
+  src: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FIvarDisplayCondensed-Regular.woff2?v=1601466641776")
+      format("woff2"),
+    url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FIvarDisplayCondensed-Regular.woff?v=1601466640046")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IvarDisplayLight";
+  src: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FIvarDisplayCondensed-Light.woff2?v=1601466635825")
+      format("woff2"),
+    url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FIvarDisplayCondensed-Light.woff?v=1601466637776")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  overflow-x: hidden;
+
+}
+
+/* unvisited link */
+a:link {
+    text-decoration:none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration:none;
+}
+
+/* selected link */
+a:active {
+    text-decoration:none;
+}
+
+.about{
+  max-height:100%;
+  max-width:100%;
+  position:absolute;
+}
+.backbutton{
+float:left;
+  margin-right:3vh;
+    color: #abfa7a;
+  border: solid 1px #abfa7a;
+   /* background-color: black;*/
+    font-family: "IvarDisplayRegular";
+    text-align: center;
+    text-decoration: none;
+  font-size: 5vw;
+    cursor: pointer;
+    padding: 2vh;
+  width:20vw;
+top:0;
+  left: 3vh;
+}
+
+
+.aboutbutton{
+display:inline-block;
+    color: black;
+  border: solid 1px black;
+padding:0 2vw;
+   /* background-color: black;*/
+    font-family: "IvarDisplayRegular";
+    text-align: center;
+    text-decoration: none!important;
+  /*  font-size: 2.5vw;
+    cursor: pointer;
+    padding: 2vh;
+  position: absolute;
+  bottom: 16vh;
+  left: 3vh;*/
+}
+
+.about {
+  background-color:black;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+
+.nummer {
+    color: #abfa7a;
+    font-size: 10vh;
+    text-align: center;
+    margin-top: 30vh;
+}
+.textbox{
+  float:left;
+      color: #abfa7a;
+width:70%;
+  /*padding:3vh 3vw 0 20vw;*/
+  font-size: 5vh;
+  top:0;
+  height:70vh;
+  overflow:scroll;
+}
+
+h2 {
+  margin:0;
+  padding:0;
+}
+.scroll-absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  height: 100%;
+  width: 100vw;
+  overflow-y:hidden;
+}
+.all-scrolls {
+  display: flex; /* displays flex-items (children) inline */
+  bottom: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.all-scrolls:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+body {
+  display: flex; /* displays flex-items (children) inline */
+  background-color: #abfa7a;
+  font-family: "IvarDisplayRegular";
+  border: 0px solid black;
+}
+/*
+svg {
+  width: auto;
+  height: 100%;
+}*/
+
+body:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.disclaimer {
+  color: white;
+  visibility: hidden;
+}
+
+.titlepage {
+  border: 0px solid black;
+  height: auto;
+  width: 100%;
+  padding-left: 1vw;
+  visibility: visible;
+  position: absolute;
+  top: 0;
+}
+
+#title {
+  font-family: "IvarDisplayLight";
+  font-size: 26vw;
+  text-align: left;
+  margin-top: 0vh;
+  padding-left: 2vw;
+}
+
+#undertitle {
+  border: 0px solid black;
+  width: 100%;
+  font-family: "IvarDisplayRegular";
+  font-size: 5vw;
+  text-align: left;
+  margin-top: -5vw;
+  padding-left: 3vw;
+}
+
+
+/*
+#beckmans {
+  text-align: right;
+  padding-right: 19vw;
+  margin-top: -1vw;
+}*/
+
+#aboutknapp {
+  text-align: right;
+  padding-right: 0vw;
+  margin-top: -1vw;
+}
+
+
+.scrolls {
+  border: 0px solid black;
+  position: absolute;
+  left: 90vw;
+  top: 0;
+  width: 500vw;
+  /*width: 500%;*/
+  height: 100vh !important;
+}
+
+#sample01 {
+  flex: 0 0 98%; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+  display: inline-block;
+  white-space: normal;
+  justify-content: space-between;
+  width: 20vw;
+  height: 100vh;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  color: rgba(255, 0, 0, 0);
+  outline: none;
+  transition: width 2s;
+  background-size: 100% 100%;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-1.png?v=1601910337629");
+  text-align: justify;
+
+
+}
+
+#sample01:focus {
+  float: left;
+  transition: width 5s;
+  width: 80vw;
+  outline: none;
+  text-align: center;
+  color: #abfa7a;
+  padding-left: 32vw;
+  padding-right: 32vw;
+  font-size: 3vw;
+  background-size: 100% 100%;
+  border: 0px solid black;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-1.png?v=1601910337629");
+
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+}
+
+#sample02 {
+  flex: 0 0 98%; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+  display: inline-block;
+  white-space: normal;
+  justify-content: space-between;
+  width: 20vw;
+  height: 100vh;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  color: rgba(255, 0, 0, 0);
+  outline: none;
+  transition: width 2s;
+  background-size: 100% 100%;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-2.png?v=1601970824947");
+}
+
+#sample02:focus {
+  float: left;
+  transition: width 5s;
+  width: 80vw;
+  outline: none;
+  text-align: center;
+  color: #abfa7a;
+  padding-left: 32vw;
+  padding-right: 32vw;
+  font-size: 3vw;
+  background-size: 100% 100%;
+  border: 0px solid black;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-2.png?v=1601970824947");
+
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#sample03 {
+  flex: 0 0 98%; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+  display: inline-block;
+  white-space: normal;
+  justify-content: space-between;
+  width: 20vw;
+  height: 100vh;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  color: rgba(255, 0, 0, 0);
+  outline: none;
+  transition: width 2s;
+  background-size: 100% 100%;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-3.png?v=1601971336272");
+}
+
+#sample03:focus {
+  float: left;
+  transition: width 5s;
+  width: 80vw;
+  outline: none;
+  text-align: center;
+  color: #abfa7a;
+  padding-left: 32vw;
+  padding-right: 32vw;
+  font-size: 3vw;
+  background-size: 100% 100%;
+  border: 0px solid black;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-3.png?v=1601971336272");
+
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#sample04 {
+  flex: 0 0 98%; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+  display: inline-block;
+  white-space: normal;
+  justify-content: space-between;
+  width: 20vw;
+  height: 100vh;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  color: rgba(255, 0, 0, 0);
+  outline: none;
+  transition: width 2s;
+  background-size: 100% 100%;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-4.png?v=1601971583423");
+}
+
+#sample04:focus {
+  float: left;
+  transition: width 5s;
+  width: 80vw;
+  outline: none;
+  text-align: center;
+  color: #abfa7a;
+  padding-left: 32vw;
+  padding-right: 32vw;
+  font-size: 3vw;
+  background-size: 100% 100%;
+  border: 0px solid black;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-4.png?v=1601971583423");
+
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#sample05 {
+  flex: 0 0 98%; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+  display: inline-block;
+  white-space: normal;
+  justify-content: space-between;
+  width: 20vw;
+  height: 100vh;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  color: rgba(255, 0, 0, 0);
+  outline: none;
+  transition: width 2s;
+  background-size: 100% 100%;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-5.png?v=1601971630383");
+}
+
+#sample05:focus {
+  float: left;
+  transition: width 5s;
+  width: 80vw;
+  outline: none;
+  text-align: center;
+  color: #abfa7a;
+  padding-left: 32vw;
+  padding-right: 32vw;
+  font-size: 3vw;
+  background-size: 100% 100%;
+  border: 0px solid black;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-5.png?v=1601971630383");
+
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#sample06 {
+  flex: 0 0 98%; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+  display: inline-block;
+  white-space: normal;
+  justify-content: space-between;
+  width: 20vw;
+  height: 100vh;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  color: rgba(255, 0, 0, 0);
+  outline: none;
+  transition: width 2s;
+  background-size: 100% 100%;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-6.png?v=1601971677040");
+}
+
+#sample06:focus {
+  float: left;
+  transition: width 5s;
+  width: 80vw;
+  outline: none;
+  text-align: center;
+  color: #abfa7a;
+  padding-left: 32vw;
+  padding-right: 32vw;
+  font-size: 3vw;
+  background-size: 100% 100%;
+  border: 0px solid black;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-6.png?v=1601971677040");
+
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#sample07 {
+  flex: 0 0 98%; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+  display: inline-block;
+  white-space: normal;
+  justify-content: space-between;
+  width: 20vw;
+  height: 100vh;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  color: rgba(255, 0, 0, 0);
+  outline: none;
+  transition: width 2s;
+  background-size: 100% 100%;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-7.png?v=1601971787830");
+}
+
+#sample07:focus {
+  float: left;
+  transition: width 5s;
+  width: 80vw;
+  outline: none;
+  text-align: center;
+  color: #abfa7a;
+  padding-left: 32vw;
+  padding-right: 32vw;
+  font-size: 3vw;
+  background-size: 100% 100%;
+  border: 0px solid black;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-7.png?v=1601971787830");
+
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#sample08 {
+  flex: 0 0 98%; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+  display: inline-block;
+  white-space: normal;
+  justify-content: space-between;
+  width: 20vw;
+  height: 100vh;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  color: rgba(255, 0, 0, 0);
+  outline: none;
+  transition: width 2s;
+  background-size: 100% 100%;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-8.png?v=1601971791333");
+}
+
+#sample08:focus {
+  float: left;
+  transition: width 5s;
+  width: 80vw;
+  outline: none;
+  text-align: center;
+  color: #abfa7a;
+  padding-left: 32vw;
+  padding-right: 32vw;
+  font-size: 3vw;
+  background-size: 100% 100%;
+  border: 0px solid black;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-8.png?v=1601971791333");
+
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#sample09 {
+  flex: 0 0 98%; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+  display: inline-block;
+  white-space: normal;
+  justify-content: space-between;
+  width: 20vw;
+  height: 100vh;
+  float: left;
+  margin: 0;
+  display: inline-block;
+  color: rgba(255, 0, 0, 0);
+  outline: none;
+  transition: width 2s;
+  background-size: 100% 100%;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-9.png?v=1601971775239");
+}
+
+#sample09:focus {
+  float: left;
+  transition: width 5s;
+  width: 80vw;
+  outline: none;
+  text-align: center;
+  color: #abfa7a;
+  padding-left: 32vw;
+  padding-right: 32vw;
+  font-size: 2.5vw;
+  background-size: 100% 100%;
+  border: 0px solid black;
+  background-image: url("https://cdn.glitch.com/6ca2a795-da23-4df8-b1cb-667f14e0070a%2FGrafik-Torarullar-9.png?v=1601971775239");
+
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+#sample01 button {
+  visibility: hidden;
+  display: none;
+}
+
+#sample01:focus button {
+  visibility: visible;
+
+  border: none;
+  color: #abfa7a;
+  border: solid 1px #abfa7a;
+   background-color: black;
+    font-family: "IvarDisplayRegular";
+  font-family: "IvarDisplayRegular";
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  margin: 4px 2px;
+  cursor: pointer;
+      padding: 2vh;
+  margin:1vh;
+
+}
+
+#sample02 button {
+  visibility: hidden;
+  display: none;
+}
+
+#sample02:focus button {
+  visibility: visible;
+
+  border: none;
+  color: #abfa7a;
+  border: solid 1px #abfa7a;
+   background-color: black;
+    font-family: "IvarDisplayRegular";
+  font-family: "IvarDisplayRegular";
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  margin: 4px 2px;
+  cursor: pointer;
+      padding: 2vh;
+  margin:1vh;
+}
+
+#sample03 button {
+  visibility: hidden;
+  display: none;
+}
+
+#sample03:focus button {
+  visibility: visible;
+
+  border: none;
+  color: #abfa7a;
+  border: solid 1px #abfa7a;
+   background-color: black;
+    font-family: "IvarDisplayRegular";
+  font-family: "IvarDisplayRegular";
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  margin: 4px 2px;
+  cursor: pointer;
+      padding: 2vh;
+  margin:1vh;
+}
+
+#sample04 button {
+  visibility: hidden;
+  display: none;
+}
+
+#sample04:focus button {
+  visibility: visible;
+
+  border: none;
+  color: #abfa7a;
+  border: solid 1px #abfa7a;
+   background-color: black;
+    font-family: "IvarDisplayRegular";
+  font-family: "IvarDisplayRegular";
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  margin: 4px 2px;
+  cursor: pointer;
+      padding: 2vh;
+  margin:1vh;
+}
+
+#sample05 button {
+  visibility: hidden;
+  display: none;
+}
+
+#sample05:focus button {
+  visibility: visible;
+
+  border: none;
+  color: #abfa7a;
+  border: solid 1px #abfa7a;
+   background-color: black;
+    font-family: "IvarDisplayRegular";
+  font-family: "IvarDisplayRegular";
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  margin: 4px 2px;
+  cursor: pointer;
+      padding: 2vh;
+  margin:1vh;
+}
+
+#sample06 button {
+  visibility: hidden;
+  display: none;
+}
+
+#sample06:focus button {
+  visibility: visible;
+
+  border: none;
+  color: #abfa7a;
+  border: solid 1px #abfa7a;
+   background-color: black;
+    font-family: "IvarDisplayRegular";
+  font-family: "IvarDisplayRegular";
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  margin: 4px 2px;
+  cursor: pointer;
+      padding: 2vh;
+  margin:1vh;
+}
+
+#sample07 button {
+  visibility: hidden;
+  display: none;
+}
+
+#sample07:focus button {
+  visibility: visible;
+
+  border: none;
+  color: #abfa7a;
+  border: solid 1px #abfa7a;
+   background-color: black;
+    font-family: "IvarDisplayRegular";
+  font-family: "IvarDisplayRegular";
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  margin: 4px 2px;
+  cursor: pointer;
+      padding: 2vh;
+  margin:1vh;
+}
+
+#sample08 button {
+  visibility: hidden;
+  display: none;
+}
+
+#sample08:focus button {
+  visibility: visible;
+
+  border: none;
+  color: #abfa7a;
+  border: solid 1px #abfa7a;
+   background-color: black;
+    font-family: "IvarDisplayRegular";
+  font-family: "IvarDisplayRegular";
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  margin: 4px 2px;
+  cursor: pointer;
+      padding: 2vh;
+  margin:1vh;
+}
+
+#sample09 button {
+  visibility: hidden;
+  display: none;
+}
+
+#sample09:focus button {
+  visibility: visible;
+
+  border: none;
+  color: #abfa7a;
+  border: solid 1px #abfa7a;
+   background-color: black;
+    font-family: "IvarDisplayRegular";
+  font-family: "IvarDisplayRegular";
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.5vw;
+  margin: 4px 2px;
+  cursor: pointer;
+      padding: 2vh;
+  margin:1vh;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+#sample01:focus .nummer,
+#sample02:focus .nummer,
+  #sample03:focus .nummer,
+  #sample04:focus .nummer,
+  #sample05:focus .nummer,
+  #sample06:focus .nummer,
+  #sample07:focus .nummer,
+  #sample08:focus .nummer,
+#sample09:focus .nummer{
+  
+display: none;  
+}  
+
+
+#samplespace01,
+#samplespace02,
+#samplespace03,
+#samplespace04,
+#samplespace05,
+#samplespace06,
+#samplespace07,
+#samplespace08,
+#samplespace09 {
+  float: left;
+  margin: 0;
+  display: inline-block;
+  width: 20vw;
+  border: 01px solid #abfa7a;
+  height: auto;
+}
+/*
+@media screen and (max-width: 768px) {
+  body {
+    background-color: black;
+  
+  }*/
+
+/*
+
+@media screen and (orientation:portrait) {
+  body {
+    background-color:black;
+    overflow:hidden!important;
+  }
+  .allscrolls {
+    background-color: black;
+    overflow:hidden!important;
+    position:absolute;
+    
+  }
+  .disclaimer {
+    visibility: visible;
+    position: absolute;
+    display:block;
+    left:0;
+    right:0;
+    top: 10vh;
+    bottom: 0;
+    font-size: 7vh;
+    color: #abfa7a;
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+    z-index:1000;
+    
+  }
+
+
+
+  .titlepage {
+    visibility: hidden;
+  }
+}*/
+
+@media screen and (orientation: portrait) {
+  body {
+    background-color:black;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: open-quote "Vänd mobilen vertikalt";
+    background-image: url("https://files.cargocollective.com/c872833/Mobil_Instruktion-Horizontellt-La-ge_Gro-n.png");
+  background-repeat: no-repeat;
+      background-position: center 20vh;
+    background-size:90%;
+    
+
+  }
+  
+  
+  .backbutton{
+    visibility:hidden;
+
+}
+  .textbox {
+    visibility:hidden;
+  }
+}
